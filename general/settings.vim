@@ -49,3 +49,6 @@ cmap w!! w !sudo tee %
 
 set number relativenumber
 set nu rnu
+
+let g:NERDTreeDirArrowExpandable = ''
+let g:NERDTreeDirArrowCollapsible = ''

@@ -34,6 +34,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'unblevable/quick-scope'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'vim-scripts/PreserveNoEOL'
+  Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
