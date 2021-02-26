@@ -2,6 +2,16 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "json", "javascriptreact", "typescript.tsx"],
   "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
+  "eslint.workingDirectories": [
+    {
+      "directory": "api",
+      "changeProcessCWD": true
+    },
+    {
+      "directory": "web",
+      "changeProcessCWD": true
+    }
+  ],
   "workspace.bottomUpFiletypes": [
     "javascript",
     "typescript",

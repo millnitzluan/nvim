@@ -70,9 +70,10 @@ nnoremap <leader>m :Marks<CR>
 
 let g:fzf_tags_command = 'ctags -R'
 " Border color
-let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
-let $FZF_DEFAULT_OPTS = '--height 40% --info=inline --reverse'
-let $FZF_DEFAULT_COMMAND='rg --files --hidden -g "!*.csv" -g "!*.sql" -g "!.git/*"  -g "!vagrant/*"  '
+let g:fzf_layout = { 'down': '~40%' }
+" let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
+let $FZF_DEFAULT_OPTS = '--info=inline --reverse'
+let $FZF_DEFAULT_COMMAND='rg --files --hidden -g "!*.lock" -g "!*.csv" -g "!*.sql" -g "!.git/*"  -g "!vagrant/*"  '
 
 
 " Customize fzf colors to match your color scheme
@@ -99,12 +100,12 @@ command! -bang -nargs=? -complete=dir Files
 " Get text in files with Rg
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always --smart-case -g "!*.csv" -g "!*.sql" -g "!.git/*" -g "!vagrant/*" '.shellescape(<q-args>), 1,
+  \   'rg --column --line-number --no-heading --color=always --smart-case -g "!*.lock" -g "!*.csv" -g "!*.sql" -g "!.git/*" -g "!vagrant/*" '.shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
 
 " Ripgrep advanced
 function! RipgrepFzf(query)
-  let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case %s || true -g "!*.csv" -g "!*.sql" -g "!.git/*" -g "!vagrant/*"'
+  let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case %s || true  -g "!*.lock" -g "!*.csv" -g "!*.sql" -g "!.git/*" -g "!vagrant/*"'
   let initial_command = printf(command_fmt, shellescape(a:query))
   let reload_command = printf(command_fmt, '{q}')
   let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
@@ -119,7 +120,7 @@ command! -bang -nargs=* GGrep
   \   'git grep --line-number '.shellescape(<q-args>), 0,
   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
 
-
+let NERDTreeShowHidden=1
 nnoremap <Leader>e :NERDTreeToggle<Enter>
 nnoremap <Leader>E :NERDTreeFind<Enter>
 nnoremap <leader>c :let @+=expand("%")<CR>

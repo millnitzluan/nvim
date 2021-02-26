@@ -6,17 +6,23 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+  " navigation
   Plug 'sheerun/vim-polyglot'
   Plug 'scrooloose/nerdtree'
   Plug 'jiangmiao/auto-pairs'
 
+  "themes
   Plug 'ryanoasis/vim-devicons'
-  Plug 'dracula/vim', { 'name': 'dracula' }
-  Plug 'joshdick/onedark.vim'
+  Plug 'ayu-theme/ayu-vim' " or other package manager
 
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " javascript plugins
+  Plug 'leafgarland/typescript-vim'
+  Plug 'maxmellon/vim-jsx-pretty'
+  Plug 'pangloss/vim-javascript'
+  Plug 'w0rp/ale'
 
-  Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+  " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
@@ -30,12 +36,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'tpope/vim-rhubarb'
   Plug 'junegunn/gv.vim'
   Plug 'liuchengxu/vim-which-key'
-  Plug 'liuchengxu/vim-which-key'
   Plug 'unblevable/quick-scope'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'vim-scripts/PreserveNoEOL'
   Plug 'junegunn/goyo.vim'
 
 call plug#end()
-
-colorscheme dracula
