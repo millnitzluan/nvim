@@ -63,7 +63,7 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 map <C-f> :GFiles<CR>
 map <leader>b :Buffers<CR>
-nnoremap <leader>g :Rg<CR>
+" nnoremap <leader>g :Rg<CR>
 nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 
@@ -125,3 +125,5 @@ nnoremap <Leader>e :NERDTreeToggle<Enter>
 nnoremap <Leader>E :NERDTreeFind<Enter>
 nnoremap <leader>c :let @+=expand("%")<CR>
 nnoremap <Leader>j :call CocAction('jumpDefinition', 'drop')<Enter>
+nmap <Leader>gd <Plug>(coc-definition)
+nmap <Leader>gr <Plug>(coc-references)

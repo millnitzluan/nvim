@@ -15,14 +15,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'ryanoasis/vim-devicons'
   Plug 'ayu-theme/ayu-vim' " or other package manager
 
-  " Plug 'neoclide/coc.nvim', {'branch': 'release'}
   " javascript plugins
   Plug 'leafgarland/typescript-vim'
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'pangloss/vim-javascript'
   Plug 'w0rp/ale'
 
-  " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+  Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
@@ -41,4 +41,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'vim-scripts/PreserveNoEOL'
   Plug 'junegunn/goyo.vim'
 
+  " Debugger Plugins
+  Plug 'puremourning/vimspector'
+  Plug 'szw/vim-maximizer'
 call plug#end()
