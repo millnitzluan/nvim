@@ -16,10 +16,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'ayu-theme/ayu-vim' " or other package manager
 
   " javascript plugins
-  " Plug 'leafgarland/typescript-vim'
-  " Plug 'maxmellon/vim-jsx-pretty'
-  " Plug 'pangloss/vim-javascript'
-
   " Linter
   Plug 'w0rp/ale'
 
@@ -27,8 +23,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
   " Language server
-  " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-  " Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
 

@@ -126,9 +126,6 @@ nnoremap <Leader>E :NERDTreeFind<Enter>
 nnoremap <leader>c :let @+=expand("%")<CR>
 nnoremap <Leader>j :call CocAction('jumpDefinition', 'drop')<Enter>
 
-" nmap <Leader>gd <Plug>(coc-definition)
-" nmap <Leader>gr <Plug>(coc-references)
-"
 " LSP config (the mappings used in the default file don't quite work right)
 nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>
