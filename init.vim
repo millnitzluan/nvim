@@ -26,7 +26,6 @@ set termguicolors     " enable true colors support
 let ayucolor="mirage" " for mirage version of theme
 colorscheme ayu
 
-source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/keys/which-key.vim
