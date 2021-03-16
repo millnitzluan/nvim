@@ -16,30 +16,53 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'ayu-theme/ayu-vim' " or other package manager
 
   " javascript plugins
-  Plug 'leafgarland/typescript-vim'
-  Plug 'maxmellon/vim-jsx-pretty'
-  Plug 'pangloss/vim-javascript'
+  " Plug 'leafgarland/typescript-vim'
+  " Plug 'maxmellon/vim-jsx-pretty'
+  " Plug 'pangloss/vim-javascript'
+
+  " Linter
   Plug 'w0rp/ale'
 
-  Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " Syntax highlight
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+
+  " Language server
+  " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+  " Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'hrsh7th/nvim-compe'
+
+  " Vim status
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+
+
   Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+
+  " Comment code
   Plug 'tpope/vim-commentary'
+
+  " Search
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+
   Plug 'airblade/vim-rooter'
+
   Plug 'mhinz/vim-startify'
+
   Plug 'mhinz/vim-signify'
+
+  " Git with vim
   Plug 'tpope/vim-fugitive'
+
   Plug 'tpope/vim-rhubarb'
   Plug 'junegunn/gv.vim'
+
+  " Help with keys
   Plug 'liuchengxu/vim-which-key'
+
   Plug 'unblevable/quick-scope'
-  Plug 'editorconfig/editorconfig-vim'
   Plug 'vim-scripts/PreserveNoEOL'
-  Plug 'junegunn/goyo.vim'
 
   " Debugger Plugins
   Plug 'puremourning/vimspector'

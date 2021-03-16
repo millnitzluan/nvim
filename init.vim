@@ -32,4 +32,6 @@ source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/keys/which-key.vim
 source $HOME/.config/nvim/plug-config/quickscope.vim
 source $HOME/.config/nvim/plug-config/vimspector.vim
+luafile $HOME/.config/nvim/general/compe-config.lua
+luafile $HOME/.config/nvim/general/javascript-ls.lua
 
