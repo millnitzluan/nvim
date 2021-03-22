@@ -13,7 +13,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   "themes
   Plug 'ryanoasis/vim-devicons'
-  Plug 'ayu-theme/ayu-vim' " or other package manager
+  Plug 'gruvbox-community/gruvbox'
 
   " javascript plugins
   " Linter
