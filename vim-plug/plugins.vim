@@ -14,6 +14,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   "themes
   Plug 'ryanoasis/vim-devicons'
   Plug 'gruvbox-community/gruvbox'
+  Plug 'Yggdroot/indentLine'
 
   " javascript plugins
   " Linter
