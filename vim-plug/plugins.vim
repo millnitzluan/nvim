@@ -5,7 +5,6 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
-
   " navigation
   Plug 'sheerun/vim-polyglot'
   Plug 'scrooloose/nerdtree'
@@ -17,7 +16,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'Yggdroot/indentLine'
 
   " javascript plugins
-  " Linter
   Plug 'w0rp/ale'
 
   " Syntax highlight
@@ -31,26 +29,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
 
-
-  Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
-
   " Comment code
   Plug 'tpope/vim-commentary'
 
   " Search
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
-
   Plug 'airblade/vim-rooter'
-
   Plug 'mhinz/vim-startify'
-
   Plug 'mhinz/vim-signify'
 
   " Git with vim
   Plug 'tpope/vim-fugitive'
 
-  Plug 'tpope/vim-rhubarb'
   Plug 'junegunn/gv.vim'
 
   " Help with keys
@@ -58,8 +49,4 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   Plug 'unblevable/quick-scope'
   Plug 'vim-scripts/PreserveNoEOL'
-
-  " Debugger Plugins
-  Plug 'puremourning/vimspector'
-  Plug 'szw/vim-maximizer'
 call plug#end()

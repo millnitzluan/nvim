@@ -19,15 +19,8 @@ let g:startify_bookmarks = [
             \ { 'p': '~/project' },
             \ ]
 let g:startify_session_autoload = 1
-let g:ale_sign_error = '❌'
-let g:ale_sign_warning = '⚠️'
-let NERDTreeDirArrows = 1
-let NERDTreeQuitOnOpen = 1
 " Must be global so that it can be read by syntax/startify.vim.
+"
 let g:startify_header = exists('g:startify_custom_header')
       \ ? s:set_custom_section(startify#pad(g:startify_custom_header))
       \ : (exists('*strwidth') ? startify#pad(startify#fortune#cowsay()) : [])
-
-
-
-

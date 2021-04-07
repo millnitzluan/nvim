@@ -8,10 +8,8 @@ source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/general/paths.vim
 source $HOME/.config/nvim/themes/airline.vim
-source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/keys/which-key.vim
 source $HOME/.config/nvim/plug-config/quickscope.vim
-source $HOME/.config/nvim/plug-config/vimspector.vim
 source $HOME/.config/nvim/plug-config/ale.vim
 luafile $HOME/.config/nvim/general/compe-config.lua
 luafile $HOME/.config/nvim/general/javascript-ls.lua
