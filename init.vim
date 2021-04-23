@@ -1,8 +1,10 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
 set encoding=UTF-8
-let g:gruvbox_contrast_dark="soft"
-colorscheme gruvbox
+
+syntax on
+" colorscheme onedark
+:silent! colorscheme dracula
 
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
