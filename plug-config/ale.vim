@@ -1,4 +1,4 @@
-let b:ale_fixers = ['prettier', 'eslint']
+let b:ale_fixers = ['prettier']
 " Fix files automatically on save
 let g:ale_fix_on_save = 1
 let g:ale_sign_error = '❌'
