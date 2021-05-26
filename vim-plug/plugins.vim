@@ -14,6 +14,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'ryanoasis/vim-devicons'
   Plug 'gruvbox-community/gruvbox'
   Plug 'Yggdroot/indentLine'
+  Plug 'joshdick/onedark.vim'
   Plug 'dracula/vim', { 'as': 'dracula' }
 
   " javascript plugins

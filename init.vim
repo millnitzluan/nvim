@@ -6,6 +6,9 @@ syntax on
 " colorscheme onedark
 :silent! colorscheme dracula
 
+let g:dracula_colorterm = 0
+hi Normal guibg=NONE ctermbg=NONE
+
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/general/paths.vim
