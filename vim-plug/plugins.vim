@@ -12,19 +12,20 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   "themes
   Plug 'ryanoasis/vim-devicons'
-  Plug 'gruvbox-community/gruvbox'
+  " Plug 'gruvbox-community/gruvbox'
   Plug 'Yggdroot/indentLine'
-  Plug 'joshdick/onedark.vim'
+  " Plug 'joshdick/onedark.vim'
   Plug 'dracula/vim', { 'as': 'dracula' }
 
   " javascript plugins
   Plug 'w0rp/ale'
 
   " Syntax highlight
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+  " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
   " Language server
   Plug 'neovim/nvim-lspconfig'
+  Plug 'kabouzeid/nvim-lspinstall'
   Plug 'hrsh7th/nvim-compe'
 
   " Vim status
@@ -51,4 +52,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   Plug 'unblevable/quick-scope'
   Plug 'vim-scripts/PreserveNoEOL'
+
+  Plug 'voldikss/vim-floaterm'
 call plug#end()
