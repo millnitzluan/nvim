@@ -18,6 +18,7 @@ source $HOME/.config/nvim/plug-config/quickscope.vim
 source $HOME/.config/nvim/plug-config/ale.vim
 luafile $HOME/.config/nvim/general/compe-config.lua
 luafile $HOME/.config/nvim/general/javascript-ls.lua
+luafile $HOME/.config/nvim/general/ruby.lua
 
 let g:indentLine_enabled = 1
 

@@ -25,7 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   " Language server
   Plug 'neovim/nvim-lspconfig'
-  Plug 'kabouzeid/nvim-lspinstall'
+  Plug 'vim-ruby/vim-ruby'
   Plug 'hrsh7th/nvim-compe'
 
   " Vim status
