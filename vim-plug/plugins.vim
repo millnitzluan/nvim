@@ -20,9 +20,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " javascript plugins
   Plug 'w0rp/ale'
 
-  " Syntax highlight
-  " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-
   " Language server
   Plug 'neovim/nvim-lspconfig'
   Plug 'vim-ruby/vim-ruby'
@@ -46,6 +43,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'tpope/vim-fugitive'
 
   Plug 'junegunn/gv.vim'
+
+  Plug 'tpope/vim-surround'
 
   " Help with keys
   Plug 'liuchengxu/vim-which-key'
