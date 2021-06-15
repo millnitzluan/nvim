@@ -7,6 +7,7 @@ return packer.startup(
         use "wbthomason/packer.nvim"
 
         -- color related stuff
+        use "joshdick/onedark.vim"
         use "siduck76/nvim-base16.lua"
         use "norcalli/nvim-colorizer.lua"
 

@@ -7,7 +7,6 @@ require("telescope").setup {
             "--with-filename",
             "--line-number",
             "--column",
-            ""
         },
         prompt_position = "bottom",
         prompt_prefix = " ",

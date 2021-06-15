@@ -32,6 +32,8 @@ SETTINGS = {
   'set nobackup',
   'set nowritebackup',
   'set relativenumber',
+  'colorscheme onedark',
+  'set scrolloff=8'
 }
 
 for _, setting in ipairs(SETTINGS) do
@@ -44,6 +46,14 @@ vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true, silent = false
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true, silent = false })
+
+vim.api.nvim_set_keymap('n', 'gd', '[[<Cmd>lua vim.lsp.buf.definition()<CR>]]', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', 'gD', '[[<Cmd>lua vim.lsp.buf.declaration()<CR>]]', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', 'gr', '[[<Cmd>lua vim.lsp.buf.references()<CR>]]', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', 'gi', '[[<Cmd>lua vim.lsp.buf.implementation()<CR>]]', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<C-s>', '[[<Cmd>lua vim.lsp.buf.signature_help()<CR>]]', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<C-n>', '[[<Cmd>lua vim.lsp.diagnostic.goto_prev()<CR>]]', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<C-p>', '[[<Cmd>lua vim.lsp.diagnostic.goto_next()<CR>]]', { noremap = true, silent = false })
 
 vim.api.nvim_set_keymap('i', '<Tab>', 'v:lua.smart_tab()', {expr = true, noremap = true})
 
