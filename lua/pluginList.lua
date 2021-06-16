@@ -34,12 +34,10 @@ return packer.startup(
         use "kyazdani42/nvim-web-devicons"
         use "ryanoasis/vim-devicons"
         use "nvim-telescope/telescope.nvim"
-        use "nvim-telescope/telescope-media-files.nvim"
         use "nvim-lua/popup.nvim"
 
         -- misc
         use "glepnir/dashboard-nvim"
-        -- use "tweekmonster/startuptime.vim"
         use "folke/which-key.nvim"
         use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
         use "ntpeters/vim-better-whitespace"

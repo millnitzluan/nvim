@@ -96,10 +96,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/neoformat"
   },
-  ["neoscroll.nvim"] = {
-    loaded = true,
-    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/neoscroll.nvim"
-  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
@@ -140,6 +136,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
+  ["onedark.vim"] = {
+    loaded = true,
+    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/onedark.vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/packer.nvim"
@@ -152,9 +152,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
-  ["startuptime.vim"] = {
+  ["quick-scope"] = {
     loaded = true,
-    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/startuptime.vim"
+    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/quick-scope"
   },
   ["telescope-media-files.nvim"] = {
     loaded = true,
@@ -163,6 +163,10 @@ _G.packer_plugins = {
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["vim-better-whitespace"] = {
+    loaded = true,
+    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/vim-better-whitespace"
   },
   ["vim-closetag"] = {
     loaded = true,

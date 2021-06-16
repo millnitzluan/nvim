@@ -46,15 +46,8 @@ require("telescope").setup {
         -- Developer configurations: Not meant for general override
         buffer_previewer_maker = require "telescope.previewers".buffer_previewer_maker
     },
-    extensions = {
-        media_files = {
-            filetypes = {"png", "webp", "jpg", "jpeg"},
-            find_cmd = "rg" -- find command (defaults to `fd`)
-        }
-    }
 }
 
-require("telescope").load_extension("media_files")
 
 local opt = {noremap = true, silent = true}
 
@@ -63,7 +56,6 @@ vim.g.mapleader = " "
 -- mappings
 vim.api.nvim_set_keymap("n", "<Leader>*", [[<Cmd>lua require('telescope.builtin').grep_string()<CR>]], opt)
 vim.api.nvim_set_keymap("n", "<Leader>f", [[<Cmd>lua require('telescope.builtin').find_files()<CR>]], opt)
-vim.api.nvim_set_keymap("n", "<Leader>p", [[<Cmd>lua require('telescope').extensions.media_files.media_files()<CR>]], opt)
 
 vim.api.nvim_set_keymap("n", "<Leader>b", [[<Cmd>lua require('telescope.builtin').buffers()<CR>]], opt)
 

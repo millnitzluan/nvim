@@ -32,6 +32,7 @@ require "highlights"
 
 -- misc global opts
 SETTINGS = {
+  'set termguicolors',
   'set cursorline',
   'set nobackup',
   'set nowritebackup',
