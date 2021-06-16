@@ -7,7 +7,7 @@ require "bufferline".setup {
         max_name_length = 14,
         max_prefix_length = 13,
         tab_size = 20,
-        show_tab_indicators = true,
+        show_tab_indicators = false,
         enforce_regular_tabs = false,
         view = "multiwindow",
         separator_style = "thin",
@@ -26,3 +26,4 @@ map("n", "<S-x>", [[<Cmd>bdelete<CR>]], opt) -- close tab
 -- move between tabs
 map("n", "<TAB>", [[<Cmd>BufferLineCycleNext<CR>]], opt)
 map("n", "<S-TAB>", [[<Cmd>BufferLineCyclePrev<CR>]], opt)
+map("n", "gb", [[<Cmd>BufferLinePick<CR>]], opt) -- select tab

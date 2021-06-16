@@ -6,7 +6,6 @@ require "top-bufferline"
 require "statusline"
 
 require("colorizer").setup()
-require("neoscroll").setup() -- smooth scroll
 
 -- lsp stuff
 require "nvim-lspconfig"
@@ -16,7 +15,12 @@ local cmd = vim.cmd
 local g = vim.g
 
 g.mapleader = " "
-g.auto_save = 0
+-- g.auto_save = 0
+
+g.strip_whitespace_on_save = 1
+g.strip_whitespace_confirm = 0
+g.better_whitespace_enabled = 0
+g.qs_highlight_on_keys = {'f', 'F', 't', 'T'}
 
 -- colorscheme related stuff
 cmd "syntax on"
@@ -54,8 +58,6 @@ vim.api.nvim_set_keymap('n', 'gi', '[[<Cmd>lua vim.lsp.buf.implementation()<CR>]
 vim.api.nvim_set_keymap('n', '<C-s>', '[[<Cmd>lua vim.lsp.buf.signature_help()<CR>]]', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<C-n>', '[[<Cmd>lua vim.lsp.diagnostic.goto_prev()<CR>]]', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<C-p>', '[[<Cmd>lua vim.lsp.diagnostic.goto_next()<CR>]]', { noremap = true, silent = false })
-
-vim.api.nvim_set_keymap('i', '<Tab>', 'v:lua.smart_tab()', {expr = true, noremap = true})
 
 g.indentLine_enabled = 1
 g.indent_blankline_char = "▏"

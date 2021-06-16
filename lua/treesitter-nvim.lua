@@ -9,7 +9,9 @@ ts_config.setup {
         "lua",
         "json",
         "python",
-        "typescript"
+        "typescript",
+        "ruby",
+        "elixir",
     },
     highlight = {
         enable = true,

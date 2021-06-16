@@ -10,6 +10,7 @@ return packer.startup(
         use "joshdick/onedark.vim"
         use "siduck76/nvim-base16.lua"
         use "norcalli/nvim-colorizer.lua"
+        use "unblevable/quick-scope"
 
         -- lang stuff
         use "nvim-treesitter/nvim-treesitter"
@@ -38,10 +39,10 @@ return packer.startup(
 
         -- misc
         use "glepnir/dashboard-nvim"
-        use "tweekmonster/startuptime.vim"
-        use "karb94/neoscroll.nvim"
+        -- use "tweekmonster/startuptime.vim"
         use "folke/which-key.nvim"
         use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
+        use "ntpeters/vim-better-whitespace"
     end,
     {
         display = {
