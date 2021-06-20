@@ -11,7 +11,7 @@ ts_config.setup {
         "python",
         "typescript",
         "ruby",
-        "elixir",
+        -- "elixir"
     },
     highlight = {
         enable = true,

@@ -92,10 +92,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
   },
-  neoformat = {
-    loaded = true,
-    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/neoformat"
-  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
@@ -156,15 +152,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/quick-scope"
   },
-  ["telescope-media-files.nvim"] = {
-    loaded = true,
-    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
   ["vim-better-whitespace"] = {
+    config = { "\27LJ\2\nt\0\0\6\0\a\0\t6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0005\5\6\0B\0\5\1K\0\1\0\1\0\1\fnoremap\2\29<Cmd>StripWhitespace<CR>\14<Leader>w\6n\20nvim_set_keymap\bapi\bvim\0" },
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/vim-better-whitespace"
   },
@@ -180,6 +173,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/vim-devicons"
   },
+  ["vim-elixir"] = {
+    loaded = true,
+    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/vim-elixir"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/which-key.nvim"
@@ -187,6 +184,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: vim-better-whitespace
+time([[Config for vim-better-whitespace]], true)
+try_loadstring("\27LJ\2\nt\0\0\6\0\a\0\t6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0005\5\6\0B\0\5\1K\0\1\0\1\0\1\fnoremap\2\29<Cmd>StripWhitespace<CR>\14<Leader>w\6n\20nvim_set_keymap\bapi\bvim\0", "config", "vim-better-whitespace")
+time([[Config for vim-better-whitespace]], false)
 if should_profile then save_profiles() end
 
 END

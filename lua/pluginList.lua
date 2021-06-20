@@ -5,6 +5,7 @@ local use = packer.use
 return packer.startup(
     function()
         use "wbthomason/packer.nvim"
+        use "christoomey/vim-tmux-navigator"
 
         -- color related stuff
         use "joshdick/onedark.vim"
@@ -17,9 +18,9 @@ return packer.startup(
         use "neovim/nvim-lspconfig"
         use "hrsh7th/nvim-compe"
         use "onsails/lspkind-nvim"
-        use "sbdchd/neoformat"
         use "nvim-lua/plenary.nvim"
         use "kabouzeid/nvim-lspinstall"
+        use "elixir-editors/vim-elixir"
 
         use "lewis6991/gitsigns.nvim"
         use "akinsho/nvim-bufferline.lua"
@@ -40,9 +41,17 @@ return packer.startup(
         use "glepnir/dashboard-nvim"
         use "folke/which-key.nvim"
         use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
-        use "ntpeters/vim-better-whitespace"
-    end,
-    {
+
+        use {
+          "ntpeters/vim-better-whitespace",
+          config = function()
+            vim.api.nvim_set_keymap(
+            "n", "<Leader>w", "<Cmd>StripWhitespace<CR>", {noremap = true}
+            )
+          end,
+        }
+      end,
+      {
         display = {
             border = {"┌", "─", "┐", "│", "┘", "─", "└", "│"}
         }

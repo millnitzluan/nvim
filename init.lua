@@ -19,7 +19,7 @@ g.mapleader = " "
 
 g.strip_whitespace_on_save = 1
 g.strip_whitespace_confirm = 0
-g.better_whitespace_enabled = 0
+g.better_whitespace_enabled = 1
 g.qs_highlight_on_keys = {'f', 'F', 't', 'T'}
 
 -- colorscheme related stuff
@@ -47,11 +47,8 @@ end
 
 vim.api.nvim_set_keymap('n', '<Leader>v', '<C-w>v', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<Leader>h', '<C-w>s', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = false })
-vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true, silent = false })
 
+-- window navigation
 vim.api.nvim_set_keymap('n', 'gd', '[[<Cmd>lua vim.lsp.buf.definition()<CR>]]', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', 'gD', '[[<Cmd>lua vim.lsp.buf.declaration()<CR>]]', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', 'gr', '[[<Cmd>lua vim.lsp.buf.references()<CR>]]', { noremap = true, silent = false })

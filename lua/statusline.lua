@@ -116,30 +116,30 @@ local checkwidth = function()
   return false
 end
 
-section.right[3] = {
-  DiffAdd = {
-    provider = "DiffAdd",
-    condition = checkwidth,
-    icon = "   ",
-    highlight = {nord_colors.green, nord_colors.line_bg}
-  }
-}
-section.right[4] = {
-  DiffModified = {
-    provider = "DiffModified",
-    condition = checkwidth,
-    icon = "柳",
-    highlight = {nord_colors.yellow, nord_colors.line_bg}
-  }
-}
-section.right[5] = {
-  DiffRemove = {
-    provider = "DiffRemove",
-    condition = checkwidth,
-    icon = " ",
-    highlight = {nord_colors.red, nord_colors.line_bg}
-  }
-}
+-- section.right[3] = {
+--   DiffAdd = {
+--     provider = "DiffAdd",
+--     condition = checkwidth,
+--     icon = "   ",
+--     highlight = {nord_colors.green, nord_colors.line_bg}
+--   }
+-- }
+-- section.right[4] = {
+--   DiffModified = {
+--     provider = "DiffModified",
+--     condition = checkwidth,
+--     icon = "柳",
+--     highlight = {nord_colors.yellow, nord_colors.line_bg}
+--   }
+-- }
+-- section.right[5] = {
+--   DiffRemove = {
+--     provider = "DiffRemove",
+--     condition = checkwidth,
+--     icon = " ",
+--     highlight = {nord_colors.red, nord_colors.line_bg}
+--   }
+-- }
 
 section.right[6] = {
   LineInfo = {
