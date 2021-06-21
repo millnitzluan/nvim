@@ -62,3 +62,10 @@ vim.api.nvim_set_keymap("n", "<Leader>b", [[<Cmd>lua require('telescope.builtin'
 -- dashboard stuff
 vim.api.nvim_set_keymap("n", "<Leader>o", [[<Cmd>lua require('telescope.builtin').oldfiles()<CR>]], opt)
 vim.api.nvim_set_keymap("n", "<Leader>t", [[<Cmd> Telescope live_grep<CR>]], opt)
+
+-- git stufs
+
+vim.api.nvim_set_keymap("n", "<Leader>gs", "<Cmd>lua require('telescope.builtin').git_status()<CR>", opt)
+vim.api.nvim_set_keymap("n", "<Leader>gc", "<Cmd>lua require('telescope.builtin').git_commits()<CR>", opt)
+vim.api.nvim_set_keymap("n", "<Leader>gb", "<Cmd>lua require('telescope.builtin').git_bcommits()<CR>", opt)
+

@@ -19,7 +19,7 @@ g.mapleader = " "
 
 g.strip_whitespace_on_save = 1
 g.strip_whitespace_confirm = 0
-g.better_whitespace_enabled = 1
+g.better_whitespace_enabled = 0
 g.qs_highlight_on_keys = {'f', 'F', 't', 'T'}
 
 -- colorscheme related stuff
