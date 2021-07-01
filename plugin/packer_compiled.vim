@@ -72,6 +72,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ale = {
+    loaded = true,
+    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/ale"
+  },
   ["dashboard-nvim"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
@@ -84,6 +88,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
+  harpoon = {
+    loaded = true,
+    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/harpoon"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
@@ -92,13 +100,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
   },
+  neogit = {
+    loaded = true,
+    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/neogit"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
-  },
-  ["nvim-base16.lua"] = {
-    loaded = true,
-    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/nvim-base16.lua"
   },
   ["nvim-bufferline.lua"] = {
     loaded = true,
@@ -132,10 +140,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
-  ["onedark.vim"] = {
-    loaded = true,
-    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/onedark.vim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/packer.nvim"
@@ -152,9 +156,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/quick-scope"
   },
+  ["telescope-fzy-native.nvim"] = {
+    loaded = true,
+    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/telescope-fzy-native.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/tokyonight.nvim"
   },
   ["vim-better-whitespace"] = {
     config = { "\27LJ\2\nt\0\0\6\0\a\0\t6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0'\4\5\0005\5\6\0B\0\5\1K\0\1\0\1\0\1\fnoremap\2\29<Cmd>StripWhitespace<CR>\14<Leader>w\6n\20nvim_set_keymap\bapi\bvim\0" },
@@ -176,6 +188,10 @@ _G.packer_plugins = {
   ["vim-elixir"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/vim-elixir"
+  },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator"
   },
   ["which-key.nvim"] = {
     loaded = true,

@@ -89,112 +89,12 @@ section.left[4] = {
   }
 }
 
-section.right[1] = {
-  GitIcon = {
-    provider = function()
-      return " "
-    end,
-    condition = require("galaxyline.provider_vcs").check_git_workspace,
-    highlight = {nord_colors.orange, nord_colors.line_bg}
-  }
-}
-section.right[2] = {
-  GitBranch = {
-    provider = "GitBranch",
-    condition = require("galaxyline.provider_vcs").check_git_workspace,
-    separator = "",
-    separator_highlight = {nord_colors.purple, nord_colors.bg},
-    highlight = {nord_colors.orange, nord_colors.line_bg, "bold"}
-  }
-}
-
-local checkwidth = function()
-  local squeeze_width = fn.winwidth(0) / 2
-  if squeeze_width > 40 then
-    return true
-  end
-  return false
-end
-
--- section.right[3] = {
---   DiffAdd = {
---     provider = "DiffAdd",
---     condition = checkwidth,
---     icon = "   ",
---     highlight = {nord_colors.green, nord_colors.line_bg}
---   }
--- }
--- section.right[4] = {
---   DiffModified = {
---     provider = "DiffModified",
---     condition = checkwidth,
---     icon = "柳",
---     highlight = {nord_colors.yellow, nord_colors.line_bg}
---   }
--- }
--- section.right[5] = {
---   DiffRemove = {
---     provider = "DiffRemove",
---     condition = checkwidth,
---     icon = " ",
---     highlight = {nord_colors.red, nord_colors.line_bg}
---   }
--- }
-
-section.right[6] = {
+section.right[3] = {
   LineInfo = {
     provider = "LineColumn",
     separator = "",
     separator_highlight = {nord_colors.blue, nord_colors.line_bg},
     highlight = {nord_colors.gray, nord_colors.line_bg}
-  }
-}
--- section.right[7] = {
---   FileSize = {
---     provider = "FileSize",
---     separator = " ",
---     condition = buffer_not_empty,
---     separator_highlight = {nord_colors.blue, nord_colors.line_bg},
---     highlight = {nord_colors.fg, nord_colors.line_bg}
---   }
--- }
-
-section.right[8] = {
-  DiagnosticError = {
-    provider = "DiagnosticError",
-    separator = " ",
-    icon = " ",
-    highlight = {nord_colors.red, nord_colors.line_bg},
-    separator_highlight = {nord_colors.bg, nord_colors.bg}
-  }
-}
-section.right[9] = {
-  DiagnosticWarn = {
-    provider = "DiagnosticWarn",
-    -- separator = " ",
-    icon = " ",
-    highlight = {nord_colors.yellow, nord_colors.line_bg},
-    separator_highlight = {nord_colors.bg, nord_colors.bg}
-  }
-}
-
-section.right[10] = {
-  DiagnosticInfo = {
-    -- separator = " ",
-    provider = "DiagnosticInfo",
-    icon = " ",
-    highlight = {nord_colors.green, nord_colors.line_bg},
-    separator_highlight = {nord_colors.bg, nord_colors.bg}
-  }
-}
-
-section.right[11] = {
-  DiagnosticHint = {
-    provider = "DiagnosticHint",
-    -- separator = " ",
-    icon = " ",
-    highlight = {nord_colors.blue, nord_colors.line_bg},
-    separator_highlight = {nord_colors.bg, nord_colors.bg}
   }
 }
 

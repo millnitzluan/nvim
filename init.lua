@@ -7,6 +7,11 @@ require "statusline"
 
 require("colorizer").setup()
 
+-- neogit
+local neogit = require('neogit')
+
+neogit.setup {}
+
 -- lsp stuff
 require "nvim-lspconfig"
 require "compe-completion"
@@ -21,14 +26,10 @@ g.strip_whitespace_on_save = 1
 g.strip_whitespace_confirm = 0
 g.better_whitespace_enabled = 0
 g.qs_highlight_on_keys = {'f', 'F', 't', 'T'}
+g.git_root = vim.fn.system("git rev-parse --git-dir"):gsub("/.git", "")
 
 -- colorscheme related stuff
 cmd "syntax on"
-
-local base16 = require "base16"
-base16(base16.themes["onedark"], true)
-
-require "highlights"
 
 -- misc global opts
 SETTINGS = {
@@ -37,7 +38,7 @@ SETTINGS = {
   'set nobackup',
   'set nowritebackup',
   'set relativenumber',
-  'colorscheme onedark',
+  'colorscheme tokyonight',
   'set scrolloff=8'
 }
 
@@ -56,6 +57,10 @@ vim.api.nvim_set_keymap('n', 'gi', '[[<Cmd>lua vim.lsp.buf.implementation()<CR>]
 vim.api.nvim_set_keymap('n', '<C-s>', '[[<Cmd>lua vim.lsp.buf.signature_help()<CR>]]', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<C-n>', '[[<Cmd>lua vim.lsp.diagnostic.goto_prev()<CR>]]', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<C-p>', '[[<Cmd>lua vim.lsp.diagnostic.goto_next()<CR>]]', { noremap = true, silent = false })
+
+
+-- :lua require("harpoon.mark").add_file()
+-- :lua require("harpoon.ui").toggle_quick_menu()
 
 g.indentLine_enabled = 1
 g.indent_blankline_char = "▏"

@@ -1,5 +1,11 @@
 require("telescope").setup {
   defaults = {
+    extensions = {
+      fzy_native = {
+        override_generic_sorter = false,
+        override_file_sorter = true
+      }
+    },
     vimgrep_arguments = {
       "rg",
       "--color=never",
@@ -7,7 +13,7 @@ require("telescope").setup {
       "--with-filename",
       "--line-number",
       "--column",
-      "--smart-case"
+      -- "--smart-case"
     },
     prompt_position = "bottom",
     prompt_prefix = " ",
@@ -48,10 +54,17 @@ require("telescope").setup {
   },
 }
 
+require('telescope').load_extension('fzy_native')
 
 local opt = {noremap = true, silent = true}
 
 vim.g.mapleader = " "
+
+-- harpoon
+vim.api.nvim_set_keymap('n', '<C-q>', "[[<Cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>]]", {})
+vim.api.nvim_set_keymap('n', '<Leader>qa', "[[<Cmd>lua require('harpoon.mark').add_file()<CR>]]", opt)
+vim.api.nvim_set_keymap('n', '<Leader>qr', "[[<Cmd>lua require('harpoon.mark').rm_file()<CR>]]", opt)
+vim.api.nvim_set_keymap('n', '<Leader>qc', "[[<Cmd>lua require('harpoon.mark').clear_all()<CR>]]", opt)
 
 -- mappings
 vim.api.nvim_set_keymap("n", "<Leader>*", [[<Cmd>lua require('telescope.builtin').grep_string()<CR>]], opt)
@@ -68,4 +81,3 @@ vim.api.nvim_set_keymap("n", "<Leader>t", [[<Cmd> Telescope live_grep<CR>]], opt
 vim.api.nvim_set_keymap("n", "<Leader>gs", "<Cmd>lua require('telescope.builtin').git_status()<CR>", opt)
 vim.api.nvim_set_keymap("n", "<Leader>gc", "<Cmd>lua require('telescope.builtin').git_commits()<CR>", opt)
 vim.api.nvim_set_keymap("n", "<Leader>gb", "<Cmd>lua require('telescope.builtin').git_bcommits()<CR>", opt)
-
