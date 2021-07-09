@@ -9,8 +9,7 @@ return packer.startup(
 
         -- color related stuff
         use 'folke/tokyonight.nvim'
-        -- use 'joshdick/onedark.vim'
-        -- use 'arcticicestudio/nord-vim'
+        use 'morhetz/gruvbox'
         use 'norcalli/nvim-colorizer.lua'
         use 'unblevable/quick-scope'
 
@@ -22,15 +21,12 @@ return packer.startup(
         use 'kabouzeid/nvim-lspinstall'
         use 'elixir-editors/vim-elixir'
         use 'w0rp/ale'
-        -- use 'mxw/vim-jsx'
 
         use 'lewis6991/gitsigns.nvim'
         use 'akinsho/nvim-bufferline.lua'
         use 'glepnir/galaxyline.nvim'
         use 'windwp/nvim-autopairs'
         use 'alvan/vim-closetag'
-        use 'ThePrimeagen/harpoon'
-        use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 
         use 'tpope/vim-commentary'
 
@@ -49,7 +45,7 @@ return packer.startup(
         -- misc
         use 'glepnir/dashboard-nvim'
         use 'folke/which-key.nvim'
-        use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
+        use {'lukas-reineke/indent-blankline.nvim', branch = 'master'}
 
         use {
           'ntpeters/vim-better-whitespace',

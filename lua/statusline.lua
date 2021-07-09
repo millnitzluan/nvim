@@ -30,11 +30,9 @@ end
 
 section.left[1] = {
   FirstElement = {
-    -- provider = function() return '▊ ' end,
     provider = function()
       return "  "
     end,
-    highlight = {nord_colors.blue, nord_colors.line_bg}
   }
 }
 section.left[2] = {
@@ -66,14 +64,12 @@ section.left[2] = {
       cmd("hi GalaxyViMode guifg=" .. mode_color[fn.mode()])
       return "      "
     end,
-    highlight = {nord_colors.red, nord_colors.line_bg, "bold"}
   }
 }
 section.left[3] = {
   FileIcon = {
     provider = "FileIcon",
     condition = buffer_not_empty,
-    highlight = {require("galaxyline.provider_fileinfo").get_file_icon_color, nord_colors.line_bg}
   }
 }
 section.left[4] = {
@@ -84,8 +80,6 @@ section.left[4] = {
     end,
     condition = buffer_not_empty,
     separator = " ",
-    separator_highlight = {nord_colors.purple, nord_colors.bg},
-    highlight = {nord_colors.purple, nord_colors.line_bg, "bold"}
   }
 }
 
@@ -93,8 +87,6 @@ section.right[3] = {
   LineInfo = {
     provider = "LineColumn",
     separator = "",
-    separator_highlight = {nord_colors.blue, nord_colors.line_bg},
-    highlight = {nord_colors.gray, nord_colors.line_bg}
   }
 }
 

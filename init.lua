@@ -38,8 +38,9 @@ SETTINGS = {
   'set nobackup',
   'set nowritebackup',
   'set relativenumber',
-  'colorscheme tokyonight',
-  'set scrolloff=8'
+  'colorscheme gruvbox',
+  'set scrolloff=8',
+  'set background=light'
 }
 
 for _, setting in ipairs(SETTINGS) do

@@ -8,15 +8,6 @@ end
 
 local opt = {}
 
--- dont copy any deleted text , this is disabled by default so uncomment the below mappings if you want them!
---[[ remove this line
-
-map("n", "dd", [=[ "_dd ]=], opt)
-map("v", "dd", [=[ "_dd ]=], opt)
-map("v", "x", [=[ "_x ]=], opt)
-
- this line too ]]
-
 -- COPY EVERYTHING --
 map("n", "<C-a>", [[ <Cmd> %y+<CR>]], opt)
 
