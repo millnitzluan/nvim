@@ -59,12 +59,6 @@ local opt = {noremap = true, silent = true}
 
 vim.g.mapleader = " "
 
--- harpoon
-vim.api.nvim_set_keymap('n', '<C-q>', "[[<Cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>]]", {})
-vim.api.nvim_set_keymap('n', '<Leader>qa', "[[<Cmd>lua require('harpoon.mark').add_file()<CR>]]", opt)
-vim.api.nvim_set_keymap('n', '<Leader>qr', "[[<Cmd>lua require('harpoon.mark').rm_file()<CR>]]", opt)
-vim.api.nvim_set_keymap('n', '<Leader>qc', "[[<Cmd>lua require('harpoon.mark').clear_all()<CR>]]", opt)
-
 -- mappings
 vim.api.nvim_set_keymap("n", "<Leader>*", [[<Cmd>lua require('telescope.builtin').grep_string()<CR>]], opt)
 vim.api.nvim_set_keymap("n", "<Leader>f", [[<Cmd>lua require('telescope.builtin').find_files()<CR>]], opt)

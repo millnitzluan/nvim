@@ -89,10 +89,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/gruvbox"
   },
-  harpoon = {
-    loaded = true,
-    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/harpoon"
-  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
@@ -100,10 +96,6 @@ _G.packer_plugins = {
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
-  },
-  neogit = {
-    loaded = true,
-    path = "/Users/luanmillnitz/.local/share/nvim/site/pack/packer/start/neogit"
   },
   ["nvim-autopairs"] = {
     loaded = true,

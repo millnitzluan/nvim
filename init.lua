@@ -7,10 +7,10 @@ require "statusline"
 
 require("colorizer").setup()
 
--- neogit
-local neogit = require('neogit')
+-- -- neogit
+-- local neogit = require('neogit')
 
-neogit.setup {}
+-- neogit.setup {}
 
 -- lsp stuff
 require "nvim-lspconfig"
@@ -58,10 +58,6 @@ vim.api.nvim_set_keymap('n', 'gi', '[[<Cmd>lua vim.lsp.buf.implementation()<CR>]
 vim.api.nvim_set_keymap('n', '<C-s>', '[[<Cmd>lua vim.lsp.buf.signature_help()<CR>]]', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<C-n>', '[[<Cmd>lua vim.lsp.diagnostic.goto_prev()<CR>]]', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<C-p>', '[[<Cmd>lua vim.lsp.diagnostic.goto_next()<CR>]]', { noremap = true, silent = false })
-
-
--- :lua require("harpoon.mark").add_file()
--- :lua require("harpoon.ui").toggle_quick_menu()
 
 g.indentLine_enabled = 1
 g.indent_blankline_char = "▏"
