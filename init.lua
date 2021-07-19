@@ -20,7 +20,7 @@ g.ale_set_highlights = 0
 g.strip_whitespace_on_save = 1
 g.strip_whitespace_confirm = 0
 g.better_whitespace_enabled = 1
-g.qs_highlight_on_keys = {'f', 'F', 't', 'T'}
+-- g.qs_highlight_on_keys = {'f', 'F', 't', 'T'}
 g.git_root = vim.fn.system("git rev-parse --git-dir"):gsub("/.git", "")
 
 -- colorscheme related stuff
@@ -41,6 +41,9 @@ SETTINGS = {
 for _, setting in ipairs(SETTINGS) do
   vim.cmd(setting)
 end
+
+-- navigation
+vim.api.nvim_set_keymap('n', 'f', '<Cmd>HopWord<CR>', { noremap = true, silent = false })
 
 -- window split
 vim.api.nvim_set_keymap('n', '<Leader>v', '<C-w>v', { noremap = true, silent = false })

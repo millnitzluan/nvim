@@ -11,7 +11,7 @@ return packer.startup(
         use 'folke/tokyonight.nvim'
         use 'morhetz/gruvbox'
         use 'norcalli/nvim-colorizer.lua'
-        use 'unblevable/quick-scope'
+        -- use 'unblevable/quick-scope'
 
         -- lang stuff
         use 'nvim-treesitter/nvim-treesitter'
@@ -21,14 +21,16 @@ return packer.startup(
         use 'kabouzeid/nvim-lspinstall'
         use 'elixir-editors/vim-elixir'
         use 'w0rp/ale'
+        use 'tpope/vim-commentary'
+        use 'mxw/vim-jsx'
+        use 'pangloss/vim-javascript'
+        use 'suy/vim-context-commentstring'
 
         use 'lewis6991/gitsigns.nvim'
         use 'akinsho/nvim-bufferline.lua'
         use 'glepnir/galaxyline.nvim'
         use 'windwp/nvim-autopairs'
         use 'alvan/vim-closetag'
-
-        use 'tpope/vim-commentary'
 
         -- file managing , picker etc
         use 'kyazdani42/nvim-tree.lua'
@@ -46,6 +48,7 @@ return packer.startup(
         use 'glepnir/dashboard-nvim'
         use 'folke/which-key.nvim'
         use {'lukas-reineke/indent-blankline.nvim', branch = 'master'}
+        use 'phaazon/hop.nvim'
 
         use {
           'ntpeters/vim-better-whitespace',
